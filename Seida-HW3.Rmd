@@ -19,6 +19,8 @@ When you save the notebook, an HTML file containing the code and output will be 
 
 The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
 
+#Chapter 4  
+
 you can create new objects with: object_name <- value "object name gets value"     
 you can use R as a calculator  
 object names must start w a letter, cannot contain special characters  
@@ -54,9 +56,25 @@ geom_point(mapping = aes(x=displ, y=hwy))
 
 #Chapter 6  
 
-Command + Shift + S runs complete script  
-always start script w the packages that you need  
+Command + Shift + S runs complete script.  
+Always start script w the packages that you need.  
 On the twitter website, I learned that you can press TAB when the cursor is inside the parentheses or "" and you can choose from file list
-you can choose from file list 
+you can choose from file list.  
 
+#Chapter 8
 
+Options, do not preserve workspace between sessions.  
+Press Cmd Shift F10 to restart RStudio  
+Press Cmd Shift S to rerun the current script  
+
+getwd()
+[1] "/home/seid3605/Seida-HW3"
+> library(tidyverse)
+> ggplot(diamonds, aes(carat, price))
+> geom_hex()
+geom_hex: na.rm = FALSE
+stat_binhex: na.rm = FALSE
+position_identity 
+> ggsave("diamonds.pdf")
+Saving 5.97 x 5.66 in image
+> write_csv(diamonds, "diamonds.csv")
